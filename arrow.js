@@ -17,7 +17,7 @@
 //     return a + b;
 // }
 
-// // arrow funtion
+// // arrow function
 
 // const add6 = (a, b) => a + b;
 // const add7 = (number1, number2) => number1 * number2;
@@ -58,17 +58,30 @@
 // // write an arrow funciton where it do following: 1) it will take an array where the  array elements wiil be the name of my friends,
 //  2) check if  the length of each element is even, push elements with even length to a new array and return the result
 
-    const getEvenLengthNames = (friends) =>{
-        let evenLengthNames = [];
-        friends.forEach(friend =>{
-            if(friend.length % 2 ===0)
-                evenLengthNames.push(friend);
-        })
-        return evenLengthNames;
-    }
+//     const getEvenLengthNames = (friends) =>{
+//         let evenLengthNames = [];
+//         friends.forEach(friend =>{
+//             if(friend.length % 2 ===0)
+//                 evenLengthNames.push(friend);
+//         })
+//         return evenLengthNames;
+//     }
 
 
 
-  const arryNames =['hasanali', 'mdshafi', 'mdridwan', 'pulakdey'];
-  const result= getEvenLengthNames(arryNames);
-  console.log(result)
+//   const arryNames =['hasanali', 'mdshafi', 'mdridwan', 'pulakdey'];
+//   const result= getEvenLengthNames(arryNames);
+//   console.log(result)
+
+const doMath = (number5, number6, number7) => {
+    const square1 = number5 * 2;
+    const square2 = number6 * 2;
+    const square3 = number7 * 2;
+    const sum = square1 + square2 + square3;
+    const avarage = sum / doMath.length;
+    return avarage
+   
+}
+
+const result = doMath(10, 20, 2);
+console.log(result)
