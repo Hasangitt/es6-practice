@@ -73,15 +73,34 @@
 //   const result= getEvenLengthNames(arryNames);
 //   console.log(result)
 
-const doMath = (number5, number6, number7) => {
-    const square1 = number5 * 2;
-    const square2 = number6 * 2;
-    const square3 = number7 * 2;
-    const sum = square1 + square2 + square3;
-    const avarage = sum / doMath.length;
-    return avarage
+// const doMath = (number5, number6, number7) => {
+//     const square1 = number5 * 2;
+//     const square2 = number6 * 2;
+//     const square3 = number7 * 2;
+//     const sum = square1 + square2 + square3;
+//     const avarage = sum / doMath.length;
+//     return avarage
    
+// }
+
+// const result = doMath(10, 20, 2);
+// console.log(result)
+
+
+
+// const array1 = [5, 5 ,8 , 9]
+// const array2 = [10, 8 , 7 , 6] 
+// const combine = [...array1, ...array2]
+// console.log(combine)
+// const result= Math.max(...combine);
+// console.log(result);
+
+const getMaxNumber = (array1, array2) => {
+    const combine =[...array1, ...array2]
+    return Math.max(...combine)
 }
 
-const result = doMath(10, 20, 2);
+const array1 = [5, 5, 8, 9, 50]
+const array2 = [10, 15, 4, 8, 6]
+const result = getMaxNumber(array1, array2)
 console.log(result)
